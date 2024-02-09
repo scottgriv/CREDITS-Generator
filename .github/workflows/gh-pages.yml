@@ -26,5 +26,6 @@ jobs:
         with:
           branch: gh-pages  # The branch the action should deploy to.
           folder: build  # The folder the action should deploy.
+          clean: true # This option cleans out existing contents of the deployment branch
           token: ${{ secrets.MY_GITHUB_TOKEN }}  # Use the provided GitHub token for authentication
 
