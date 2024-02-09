@@ -6,6 +6,11 @@ on:
       - main
   workflow_dispatch:
 
+permissions:  # Customize the permissions for GITHUB_TOKEN
+  contents: read
+  pages: write
+  id-token: write  # Ensure the workflow has the necessary permissions
+  
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
