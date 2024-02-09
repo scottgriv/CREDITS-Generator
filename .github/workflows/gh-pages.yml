@@ -1,0 +1,27 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main  # Or your default branch
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Specify the Node.js version
+
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.1.4
+      with:
+        branch: gh-pages  # The branch the action should deploy to.
+        folder: build  # The folder the action should deploy.
