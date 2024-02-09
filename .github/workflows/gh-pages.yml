@@ -9,8 +9,8 @@ on:
 permissions:  # Customize the permissions for GITHUB_TOKEN
   contents: read
   pages: write
-  id-token: write  # Ensure the workflow has the necessary permissions
-  
+  id-token: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -27,16 +27,6 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      # This step is not needed for the newer GitHub Pages deployment process
-      # It's included for context in traditional deployment workflows
-      #- name: Deploy to GitHub Pages
-      #  uses: JamesIves/github-pages-deploy-action@v4
-      #  with:
-      #    branch: gh-pages
-      #    folder: build
-      #    clean: true
-      #    token: ${{ secrets.MY_GITHUB_TOKEN }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
