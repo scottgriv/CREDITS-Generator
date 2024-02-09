@@ -29,4 +29,4 @@ jobs:
           branch: gh-pages  # Deployment branch
           folder: build  # Folder to deploy from
           clean: true  # Cleans the deployment branch before pushing
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use the built-in GITHUB_TOKEN for authentication
+          token: ${{ secrets.MY_GITHUB_TOKEN }}  # Use the built-in GITHUB_TOKEN for authentication
