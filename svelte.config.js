@@ -11,7 +11,7 @@ export default {
 		precompress: false
 	  }),
 	  paths: {
-		base: process.env.NODE_ENV === 'production' ? '/CREDITS-Generator' : '',
+		base: '/CREDITS-Generator'
 	  },
   },
 };
