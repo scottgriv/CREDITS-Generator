@@ -13,8 +13,8 @@ This file is used to connect this repository to the **PRG** project categorizati
 ## Project Information
 
 **Repository Tier:** Silver <br>
-**Technology:** Markdown, SvelteKit <br>
-**Category:** Template <br>
+**Technology:** Markdown, Svelte, SvelteKit <br>
+**Category:** Template Generator <br>
 **Order:** 1 <br>
 
 ## Parameters
