@@ -20,11 +20,9 @@
   let markdownContent = writable("");
 
   // Dynamically update markdownContent based on form inputs and checkbox states
-  $: markdownContent.set(`
-# Credits
+  $: markdownContent.set(`# Credits
 
-This project owes its success to the following people and organizations:
-${$removeContributors ? "" : `\n\n## Contributors\n${$contributors}`}${
+This project owes its success to the following people and organizations:${$removeContributors ? "" : `\n\n## Contributors\n${$contributors}`}${
     $removeThirdPartyLibraries
       ? ""
       : `\n\n## Third-party Libraries\n${$thirdPartyLibraries}`
@@ -362,7 +360,7 @@ This document is a way to publicly appreciate the contributions of those who hav
     .form-input,
     .preview {
       width: 94%; /* Allow children to fill the container width */
-      padding: 15px; /* Adjust padding as needed */
+      padding: 10px; /* Adjust padding as needed */
     }
 
     .preview textarea {
