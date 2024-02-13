@@ -53,8 +53,10 @@ This document is a way to publicly appreciate the contributions of those who hav
   }
 </script>
 
-<div class="title">CREDITS Generator</div>
-<img src="icon.png" alt="Credits Icon" class="title-icon">
+<div class="title-container">
+  <img src="icon.png" alt="Credits Icon" class="title-icon">
+  <div class="title">CREDITS Generator</div>
+</div>
 <div class="subtitle">
   The CREDITS.md file is designed to recognize and honor the contributions of
   individuals and organizations that have played a pivotal role in the
@@ -71,7 +73,7 @@ This document is a way to publicly appreciate the contributions of those who hav
   a CREDITS.md file for acknowledging contributions to your project. Simply input
   details of contributors, third-party libraries, financial supporters, and special
   thanks, then review and edit the preview. Once satisfied, download the CREDITS.md
-  file and place it in the root of your GitHub repository to transparently showcase
+  file and place it in the root (or .github folder) of your GitHub repository to transparently showcase
   all project contributions.
 </div>
 <div class="container">
@@ -200,7 +202,7 @@ This document is a way to publicly appreciate the contributions of those who hav
   </div>
   <div class="preview">
     <h2>Markdown file preview:</h2>
-    <textarea class="markdown-preview" bind:value={$markdownContent}></textarea>
+    <textarea id="markdown-preview-text" class="markdown-preview" bind:value={$markdownContent}></textarea>
   </div>
 </div>
 
@@ -215,9 +217,16 @@ This document is a way to publicly appreciate the contributions of those who hav
     align-items: center; /* Centers the children horizontally */
   }
 
+  .title-container {
+    display: flex;
+    align-items: center; /* This will vertically center align the icon with the title */
+  }
+
   .title-icon {
-    width: 150px; /* Adjust based on your image's size */
-    height: 150px; /* Adjust based on your image's size */
+    margin-right: 10px; /* Adjust the space between the icon and the title */
+    /* You can adjust the size of the icon as needed */
+    width: 60px; /* Adjust based on your image's size */
+    height: 60px; /* Adjust based on your image's size */
     padding: 5px 0; /* Adds padding instead of margin to space out the title */
   }
 
@@ -334,7 +343,7 @@ This document is a way to publicly appreciate the contributions of those who hav
 
   :global(footer) {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   :global(footer a) {
@@ -342,14 +351,33 @@ This document is a way to publicly appreciate the contributions of those who hav
     text-decoration: none;
   }
 
+  :global(footer a:visited) {
+    color: #0e4c92;
+  }
+
   :global(footer a:hover) {
     text-decoration: underline;
   }
 
   @media (max-width: 768px) {
+
+    :global(footer) {
+      text-align: center;
+      margin-top: 30px;
+      margin-right: 65px;
+    }
+
     :global(body) {
       padding: 15px; /* Reduced padding on smaller screens */
     }
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%; 
+    }
+
     .container {
       flex-direction: column;
       width: 100%; /* Use 100% width for mobile to ensure full width is utilized */
