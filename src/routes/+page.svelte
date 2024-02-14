@@ -22,18 +22,18 @@
   // Dynamically update markdownContent based on form inputs and checkbox states
   $: markdownContent.set(`# Credits
 
-This project owes its success to the following people and organizations:${$removeContributors ? "" : `\n\n## Contributors\n${$contributors}`}${
+This project owes its success to the following people and organizations:${$removeContributors ? "" : `\n\n## Contributors\n\n${$contributors}`}${
     $removeThirdPartyLibraries
       ? ""
-      : `\n\n## Third-party Libraries\n${$thirdPartyLibraries}`
+      : `\n\n## Third-party Libraries\n\n${$thirdPartyLibraries}`
   }${
     $removeFinancialSupport
       ? ""
-      : `\n\n## Financial Support\n${$financialSupport}`
-  }${$removeSpecialThanks ? "" : `\n\n## Special Thanks\n${$specialThanks}`}${
-    $removeLicense ? "" : `\n\n## License\n${$license}`
+      : `\n\n## Financial Support\n\n${$financialSupport}`
+  }${$removeSpecialThanks ? "" : `\n\n## Special Thanks\n\n${$specialThanks}`}${
+    $removeLicense ? "" : `\n\n## License\n\n${$license}`
   }${
-    $removeAcknowledgments ? "" : `\n\n## Acknowledgments\n${$acknowledgments}`
+    $removeAcknowledgments ? "" : `\n\n## Acknowledgments\n\n${$acknowledgments}`
   }
 
 This document is a way to publicly appreciate the contributions of those who have helped make this project what it is today. Thank you!
@@ -72,7 +72,7 @@ This document is a way to publicly appreciate the contributions of those who hav
   The CREDITS Generator is a straightforward tool designed to help you quickly create
   a CREDITS.md file for acknowledging contributions to your project. Simply input
   details of contributors, third-party libraries, financial supporters, and special
-  thanks, then review and edit the preview. Once satisfied, download the CREDITS.md
+  thanks, then review or edit the preview. Once satisfied, download the CREDITS.md
   file and place it in the root (or .github folder) of your GitHub repository to transparently showcase
   all project contributions.
 </div>
