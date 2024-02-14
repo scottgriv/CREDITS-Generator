@@ -30,7 +30,7 @@ The **CREDITS Generator** is a straightforward tool designed to help you quickly
 
 <div align="center">
     <a href="https://scottgriv.github.io/CREDITS-Generator" target="_blank">
-        <img src="./docs/images/demo.png" style="width: 75%;"/>
+        <img src="./docs/images/demo.png" style="width: 80%;"/>
     </a>
     <br>
     <i>Application Preview</i>
