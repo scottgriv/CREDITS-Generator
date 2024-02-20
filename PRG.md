@@ -14,7 +14,7 @@ This file is used to connect this repository to the **PRG** project categorizati
 
 **Repository Tier:** Silver <br>
 **Technology:** Markdown, Svelte, SvelteKit <br>
-**Category:** Template Generator <br>
+**Category:** Template Generator, Web Application <br>
 **Order:** 5 <br>
 
 ## Parameters
