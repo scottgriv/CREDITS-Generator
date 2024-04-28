@@ -58,21 +58,21 @@ This document is a way to publicly appreciate the contributions of those who hav
   <div class="title">CREDITS Generator</div>
 </div>
 <div class="subtitle">
-  The CREDITS.md file is designed to recognize and honor the contributions of
+  The <span class="code-inline-light">CREDITS.md</span> file is designed to recognize and honor the contributions of
   individuals and organizations that have played a pivotal role in the
   development and success of a project. It serves as a formal acknowledgment of
   the efforts of developers, designers, financial supporters, third-party
   libraries, and any other entities that have provided valuable input or
-  resources. By detailing these contributions in a dedicated CREDITS document,
+  resources. By detailing these contributions in a dedicated CREDITS markdown document,
   projects can transparently attribute the collaborative achievements that have
   shaped their evolution, fostering a culture of gratitude and open
   collaboration within the community.
   <br />
   <br />
-  The CREDITS Generator is a straightforward tool designed to help you quickly create
-  a CREDITS.md file for acknowledging contributions to your project. Simply input
+  <i>The CREDITS Generator</i> is a straightforward tool designed to help you quickly create
+  a <span class="code-inline-light">CREDITS.md</span> file for acknowledging contributions to your project. Simply input
   details of contributors, third-party libraries, financial supporters, and special
-  thanks, then review or edit the preview. Once satisfied, download the CREDITS.md
+  thanks, then review or edit the preview. Once satisfied, download the <span class="code-inline-light">CREDITS.md</span>
   file and place it in the root (or .github folder) of your GitHub repository to transparently showcase
   all project contributions.
 </div>
@@ -339,6 +339,16 @@ This document is a way to publicly appreciate the contributions of those who hav
 
   .hide-section label {
     margin-right: 8px; /* Adjust spacing as needed */
+  }
+
+  .code-inline-light {
+    background-color: #dbdbdb;
+    color: #000000;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+      monospace;
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+    border-radius: 6px;
   }
 
   :global(footer) {
