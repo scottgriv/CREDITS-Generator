@@ -37,6 +37,8 @@ This project owes its success to the following people and organizations:${$remov
   }
 
 This document is a way to publicly appreciate the contributions of those who have helped make this project what it is today. Thank you!
+
+***Generated using [CREDITS Generator](https://scottgriv.github.io/CREDITS-Generator/).***
 `);
 
   function downloadCredits() {
