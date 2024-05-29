@@ -20,7 +20,7 @@
 
 ---------------
 
-<h1 align="center">CREDITS Generator</h1>
+<h1 align="center">📄 CREDITS Generator</h1>
 
 The `CREDITS.md` file is designed to recognize and honor the contributions of individuals and organizations that have played a pivotal role in the development and success of a project. It serves as a formal acknowledgment of the efforts of developers, designers, financial supporters, third-party libraries, and any other entities that have provided valuable input or resources. By detailing these contributions in a dedicated `CREDITS.md` document, projects can transparently attribute the collaborative achievements that have shaped their evolution, fostering a culture of gratitude and open collaboration within the community.
 
