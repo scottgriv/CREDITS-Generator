@@ -36,6 +36,8 @@ This project owes its success to the following people and organizations:${$remov
     $removeAcknowledgments ? "" : `\n\n## Acknowledgments\n\n${$acknowledgments}`
   }
 
+### Closing
+
 This document is a way to publicly appreciate the contributions of those who have helped make this project what it is today. Thank you!
 
 ***Generated using [CREDITS Generator](https://scottgriv.github.io/CREDITS-Generator/).***
@@ -197,7 +199,7 @@ This document is a way to publicly appreciate the contributions of those who hav
       bind:value={$acknowledgments}
       placeholder="- Hat tip to anyone whose code was used
 - Inspiration
-- etc"
+- etc..."
     ></textarea>
 
     <button on:click={downloadCredits}>Download CREDITS.md File</button>
